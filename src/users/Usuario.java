@@ -1,4 +1,5 @@
 package users;
+import java.util.Scanner;
 public class Usuario {
     protected String nombre;
     protected String apellido;
@@ -39,6 +40,7 @@ public class Usuario {
     public void setCorreo(String correo) {
         this.correo = correo;
     }
-    
+
+    //Metodos
     
 }

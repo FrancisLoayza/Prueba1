@@ -14,7 +14,6 @@ public class Interfaz {
 
         switch (tipo) {
             case "R":
-                /*Revisor r1=new Revisor("Francis", "Loayza", "loayzafrancis@gmail.com",Rol.valueOf(tipo), tipo, 0, tipo, tipo);*/
                 break;
             
             case "A":

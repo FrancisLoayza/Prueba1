@@ -25,5 +25,10 @@ public class Editor extends Usuario {
     public void setNombreJournal(String nombreJournal){this.nombreJournal=nombreJournal;}
     public void setUserName(String userName){this.userName=userName;}
     public void setContrasenia(String contrasenia){this.contrasenia=contrasenia;}
+
+    //Metodos
+    public void inicioSesion(){
+        
+    }
     
 }
