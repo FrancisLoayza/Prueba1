@@ -19,10 +19,11 @@ public class Sistema {
     }
     public static void registrarDatoUsuario(){
         try{
-            BufferedWriter escrito=new BufferedWriter(new FileWriter("Datos/Usuario.txt",false));
+            BufferedWriter escrito=new BufferedWriter(new FileWriter("Usuario.txt",false));
             for (Usuario usuario : listaUsuario) {
                 escrito.write(usuario+"\n");
             }
+            escrito.close();
         }catch(IOException e){
             System.out.println("Error al escribir en el archivo");
         }

@@ -13,6 +13,8 @@ public class main {
         Sistema.AgergarListaUsuario(autor);
         System.out.println(Sistema.listaUsuario.toString());
         Sistema.registrarDatoUsuario();
+
+        
         System.out.println("Ingrese su Usuario:");
         Scanner sc=new Scanner(System.in);
         String usuario=sc.nextLine();
