@@ -3,5 +3,7 @@ public class main {
         System.out.println("Hola");
         Interfaz in1 = new Interfaz();
         in1.inicio();        
+        System.out.println("Hola como estas");
+        
     }
 }
