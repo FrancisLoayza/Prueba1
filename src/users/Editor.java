@@ -1,4 +1,6 @@
 package users;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 public class Editor extends Usuario {
     protected String especialidad;
     protected String nombreJournal;
@@ -13,6 +15,7 @@ public class Editor extends Usuario {
         this.userName=userName;
         this.contrasenia=contrasenia;
     }
+    
 
     //Getters
     public String getEspecialidad(){ return this.especialidad;}
@@ -27,7 +30,7 @@ public class Editor extends Usuario {
     public void setContrasenia(String contrasenia){this.contrasenia=contrasenia;}
 
     //Metodos
-    public void inicioSesion(){
+    public void guardarUsuario(){
         
     }
     
