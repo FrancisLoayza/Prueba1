@@ -17,7 +17,7 @@ public class Autor extends Usuario {
     
     //Constructor
     public Autor(String nombre, String apellido, String correo, Rol rol, String especialidad, int id, String institucion, String campoDeInvestigacion, ArrayList<Articulo> articulo){
-        super(nombre,apellido,correo,rol);
+        super(nombre,apellido,correo,rol,null, null);
         this.id=id;
         this.institucion=institucion;
         this.campoDeInvestgacion=campoDeInvestigacion;

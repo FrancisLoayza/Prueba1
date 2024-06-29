@@ -1,4 +1,4 @@
-package mail;
+/*package mail;
 
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
@@ -7,9 +7,7 @@ import java.util.Properties;
 import jakarta.mail.*;
 import jakarta.mail.internet.*;
 
-import io.github.cdismacio.dotenv.Dotenv;
-import jdk.javadoc.doclet.DocletEnvironment;
-
+import io.github.cdimascio.dotenv.Dotenv;
 
 public class Mail {
     private static String correo;
@@ -25,22 +23,29 @@ public class Mail {
         crearSesion();
     }
 
-    public static String getCorreo(){return correo;}
-
-    private static void cargarDatos(){
-        Dotenv dotenv = Dotenv.configure().directory("/tmp").filename("credenciales.properties").load();
-        correo = dotenv.get("CORREO");
-        clave = dotenv.get("CLAVE");
-        host = dotenv.get("HOST");
-        puerto = dotenv.get("PUERTO");
+    public static String getCorreo() {
+        return correo;
     }
+
+    private static void cargarDatos() {
+        try {
+            Dotenv dotenv = Dotenv.configure().directory("/tmp").filename("credenciales.properties").load();
+            correo = dotenv.get("CORREO");
+            clave = dotenv.get("CLAVE");
+            host = dotenv.get("HOST");
+            puerto = dotenv.get("PUERTO");
+        } catch (Exception e) {
+            throw new RuntimeException("Error al cargar las credenciales del correo: " + e.getMessage(), e);
+        }
+    }
+
     private static void cargarPropiedades() {
         properties = new Properties();
         properties.put("mail.smtp.host", host);
         properties.put("mail.smtp.ssl.trust", host);
         properties.put("mail.smtp.port", puerto);
         properties.put("mail.smtp.auth", "true");
-        properties.put("mail.smtp.ssl.enable", true);
+        properties.put("mail.smtp.ssl.enable", "true");
         properties.put("mail.smtp.socketFactory.port", puerto);
         properties.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
     }
@@ -66,4 +71,4 @@ public class Mail {
             return "Error al enviar correo a " + destinatario + ": " + e.getMessage();
         }
     }
-}
+}*/

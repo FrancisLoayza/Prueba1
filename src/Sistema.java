@@ -5,7 +5,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.FileReader;
-import Datos.*;
+//import Datos.*;
 public class Sistema {
     public static ArrayList<Usuario> listaUsuario=new ArrayList<Usuario>();
     private static ArrayList<Articulo> listaArticulo=new ArrayList<Articulo>();

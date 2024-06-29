@@ -6,11 +6,10 @@ public class Revisor extends Usuario{
     protected String contrasena;
 
     public Revisor(String nombre, String apellido, String correo,Rol rol, String especialidad, int ArticuloRevisado, String userName, String contrasena){
-        super(nombre,apellido,correo,rol);
+        super(nombre,apellido,correo,rol,userName,contrasena);
         this.especialidad=especialidad;
         this.articuloRevisado=articuloRevisado;
-        this.userName=userName;
-        this.contrasena=contrasena;
+        
     }
 
     //Getters

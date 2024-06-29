@@ -9,11 +9,10 @@ public class Editor extends Usuario {
 
     //Constructor
     public Editor(String nombre, String apellido, String correo, Rol rol, String especialidad, String nombreJournal, String userName, String contrasenia){
-        super(nombre, apellido, correo,rol);
+        super(nombre, apellido, correo,rol,userName,contrasenia);
         this.especialidad=especialidad;
         this.nombreJournal=nombreJournal;
-        this.userName=userName;
-        this.contrasenia=contrasenia;
+        
     }
     
 
