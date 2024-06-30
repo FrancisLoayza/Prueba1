@@ -11,7 +11,6 @@ public class main {
     Interfaz interfaz= new Interfaz();
 
     public static void main(String[] args) {
-        
         Interfaz.inicio();
     }
 }
